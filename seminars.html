@@ -45,49 +45,146 @@
       </div> 
 
       <div class="page-block">
-        <h2>CCSE Seminar: Multiscale and Multiphysics Modelling (Nov 1, 2017)</h2>
-        <ul>
-	      <li>Prof. Clinton Groth (University of Toronto): Role of Multi-Scale Physics Modelling in LES of Turbulent Premixed Combustion</li>
-		  <li>Prof. Costas Sarris (University of Toronto): Multiscale and multiphysics computational electromagnetics: retrospective, present, outlook</li>
-		  <li>Dr. Lucie Freret (University of Toronto): Anisotropic Adaptive Mesh Refinement for Ideal Magnethohydrodynamics</li>
-        </ul>
+        <h2>CCSE Seminar: Multiscale and Multiphysics Modelling (Nov 1, 2017)</h2> 
+		  <h3>Title: Role of Multi-Scale Physics Modelling in LES of Turbulent Premixed Combustion</h3>
+		  <p>Prof. Clinton Groth, University of Toronto - Institute for Aerospace Studies</p>
+		  <h3>Abstract: </h3>
+		  <p>The importance and role of multi-scale physics modelling in the large-eddy simulation (LES) of turbulent premixed 
+		  flames will be discussed and a number of recently proposed subfilter-scale (SFS) combustion models for their prediction 
+		  will be described.  LES results for several premixed flames associated with the UTIAS Bunsen-type burner will also be 
+		  considered in order to illustrate current capabilities and limitations of the models and indicate the directions for 
+		  future study.</p>
+		  <br>
+		  <h3>Title: Multiscale and multiphysics computational electromagnetics: retrospective, present, outlook</h3>
+		  <p>Prof. Costas Sarris, University of Toronto - Department of Electrical and Computer Engineering</p>
+		  <h3>Abstract: </h3>
+		  <p>An overview of our research on multiscale problems in electromagnetics will be given, starting from wavelet-based 
+		  methods for nonlinear optics, an adaptive mesh refinement technique (AMR-FDTD) and more recently developed sub-gridding 
+		  techniques coupled with leap-from time stepping beyond the CFL limit, enabled by spatial filtering of fields. Moreover, 
+		  vector parabolic equation methods for large scale wave propagation problems, arising in wireless communication scenarios, 
+		  will be discussed, along with related uncertainty quantification studies. Finally, some multiphysics applications of 
+		  electromagnetic fields, motivating further research on both modeling and optimization techniques, will be discussed.</p>
+		  <br>
+		  <h3>Title: Anisotropic Adaptive Mesh Refinement for Ideal Magnethohydrodynamics</h3>
+		  <p>Dr. Lucie Freret, University of Toronto - Institute for Aerospace Studies</p>
+		  <h3>Abstract: </h3>
+		  <p>A high-order central essentially non-oscillatory (CENO) finite-volume scheme combined with a block-based anisotropic 
+		  adaptive mesh refinement (AMR) algorithm is proposed for the solution of the ideal magnetohydrodynamics (MHD) equations. 
+		  A generalized Lagrange multiplier (GLM) divergence correction technique is applied to achieve numerically-divergent free 
+		  magnetic fields while preserving high-order accuracy. The cell-centered CENO method uses a hybrid reconstruction approach 
+		  based on a fixed central stencil. Smooth and fully resolved solution data is interpolated using an unlimited high-order 
+		  k-exact reconstruction. In cells deemed to have under-resolved/discontinuous solution content based on a smoothness indicator, 
+		  the high-order reconstruction reverts to a lower-order limited linear approach. The high-order CENO finite-volume scheme is 
+		  implemented with fourth-order spatial accuracy within a flexible multi-block hexahedral grid framework. Parallel 
+		  implementation and local anisotropic grid adaptivity are achieved by using a hierarchical block-based domain decomposition 
+		  strategy in which the connectivity and refinement history of grid blocks are tracked using a binary tree data structure. 
+		  Numerical results, including solution-driven anisotropic refinement of cubed-sphere grids are presented to demonstrate the 
+		  accuracy and efficiency of the proposed high-order solution method.</p>
       </div>
 	
       <div class="page-block">
         <h2>CCSE Seminar: Reduced-Order Modelling (Feb 2, 2018)</h2>
-        <ul>
-	      <li>Prof. Aimy Bazylak (University of Toronto): Pore network modeling for investigating multiphase flows in fuel cells and electrolyzers</li>
-		  <li>Prof. Piero Triverio (University of Toronto): A Dissipation Theory for FDTD With Application to the Stable Model Order Reduction of FDTD Equations</li>
-		  <li>Prof. Masayuki Yano (University of Toronto): Model reduction for parametrized partial differential equations</li>
-        </ul>
+	      <h3>Title: Pore network modeling for investigating multiphase flows in fuel cells and electrolyzers</h3>
+		  <p>Prof. Aimy Bazylak, University of Toronto - Department of Mechanical and Industrial Engineering</p>
+		  <h3>Abstract: </h3>
+		  <p>The hydrogen polymer electrolyte membrane (PEM) fuel cell provides enormous potential for a future with clean energy. However, 
+		  PEM fuel cells have not yet reached widespread commercial adoption, and key barriers are related to inefficient mass transport in 
+		  microscale porous materials. Mass transport limitations arising from liquid water flooding in low temperature PEM fuel cells and 
+		  acid leaching in high temperature PEM fuel cells leads to significant inefficiencies. If these issues become resolved, smaller and 
+		  more reliable devices could be produced at a lower cost. Mass transport limitations can be minimized through the development of 
+		  optimized materials, which have tailored pore structures, connectivities, conductivities, and surface wettabilities. The porous 
+		  materials in PEM fuel cells could be customized for mass transport with detailed information about their structure and the dominating 
+		  mass transport mechanisms that result from these structures. In this talk, I will discuss pore network modelling as a highly 
+		  computationally efficient means of investigating multiphase transport in PEM fuel cells and electrolyzers.</p>
+		  <br>
+		  <h3>Title: A Dissipation Theory for FDTD With Application to the Stable Model Order Reduction of FDTD Equations</h3>
+		  <p>Prof. Piero Triverio, University of Toronto - Department of Electrical and Computer Engineering</p>
+          <h3>Abstract: </h3>
+          <p>The Finite-Difference Time-Domain (FDTD) method is a very popular explicit scheme to solve Maxwell's equations. Model order 
+		  reduction has been proposed to accelerate FDTD in multiscale scenarios. However, proving the stability of an FDTD scheme with 
+		  embedded reduced models is a formidable task. In this talk, we first establish a connection between the FDTD method and the theory 
+		  of dissipative systems. We show that the FDTD equations for a given region can be seen as a dynamical system which is dissipative 
+		  under a generalized Courant-Friedrichs-Lewy condition. Based on the concept of dissipation, we present a powerful theoretical 
+		  framework to create advanced FDTD-like schemes with guaranteed stability, where stability conditions can be given for the individual 
+		  components (e.g. boundary conditions, meshes, embedded reduced models) rather than for the whole coupled scheme. Using the proposed 
+		  theory, we show how reduced models can be systematically generated and embedded into a main FDTD mesh with a rigorous guarantee of 
+		  stability.</p>
+          <br>		  
+		  <h3>Title: Model reduction for parametrized partial differential equations</h3>
+		  <p>Prof. Masayuki Yano, University of Toronto - Institute for Aerospace Studies</p>
+		  <h3>Abstract: </h3>
+		  <p>We discuss a model reduction method that enables rapid and reliable solution of parametrized partial differential equations 
+		  (PDEs) in continuum mechanics. Our interest is in many-query scenarios, which require solution evaluation for a large number 
+		  different parameter values, each of which often in real time. The model reduction approach comprises three key ingredients: 
+		  reduced basis spaces that provide rapidly convergent approximations to the parametric manifold; a posteriori error estimates 
+		  which quantify the error in the solutions; offline-online computational decomposition which allows us to construct, once, a 
+		  reduced model in the offline stage and invoke, many times, the reduced model in the online stage.</p>
       </div>
 	  
       <div class="page-block">
         <h2>CCSE Seminar: Invited talk (April 5, 2018)</h2>
-        <ul>
-	      <li>Prof. Krzysztof Fidkowski (University of Michigan): Improving Robustness of CFD Applications through Output-Based Adaptive Methods</li>
+	      <h3>Title: Improving Robustness of CFD Applications through Output-Based Adaptive Methods</h3>
+		  <p>Prof. Krzysztof Fidkowski, University of Michigan - Department of Aerospace Engineering</p>
+		  <h3>Abstract: </h3>
+		  <p>Aerodynamic analysis and design applications are increasingly relying on high-fidelity computational fluid dynamics simulations, 
+		  which are becoming more complex as a result of advances in both hardware and algorithms. However, as simulations become more complex, 
+		  so does the task of ensuring accuracy of the results, which have a direct impact on the application of interest. For large, 
+		  multidisciplinary problems, expert practitioners cannot reliably assess accuracy of a simulation through visual inspection alone, and 
+		  best-practice meshing and verification guidelines may not apply to the analysis of novel configurations. This presentation introduces 
+		  output-based methods for addressing this situation by automating the process of estimating errors and improving fidelity, so that 
+		  robustness of the solution process can be vastly improved. Output-based methods rely on the solution of an auxiliary adjoint problem, 
+		  which has already seen application to shape optimization and data assimilation. We explore many uses of the adjoint solution for optimizing 
+		  computations relevant to aerospace engineering, including steady-state mesh refinement, unstructured mesh optimization, adapting in space 
+		  and time for unsteady simulations, and adapting both the mesh and approximation order in high-order methods. We also present new results 
+		  from ongoing projects in improving efficiency of the calculation of the error estimates, and in combining mesh optimization with shape 
+		  optimization.</p>
         </ul>
       </div>
 	  
       <div class="page-block">
         <h2>CCSE Seminar: Invited talk (June 15, 2018)</h2>
-        <ul>
-	      <li>Prof. Shahriar Afkhami (New Jersey Institute of Technology): A numerical method for modeling interfacial flows with variable surface tension</li>
-        </ul>
+	      <h3> Title: A numerical method for modeling interfacial flows with variable surface tension</h3>
+		  <p>Prof. Shahriar Afkhami, New Jersey Institute of Technology - Department of Mathematical Sciences</p>
+		  <h3>Abstract: </h3>
+          <p>Accurate modeling of surface tension effects has been a focus of research in the past twenty years, due to its importance in understanding and 
+		  predicting a variety of two-phase flow problems. Amongst all the Eulerian representations of the surface tension, the Volume-of-Fluid method has 
+		  enjoyed major progress recently. Here I discuss some of advances we have made in the case of variable surface tension, where "localized" tangential 
+		  (Marangoni) stresses are included in the Volume-of-Fluid formulation. The implementation is general, i.e. it applies to both temperature and concentration 
+		  dependent surface tension coefficient, along with the setups involving a large jump in the temperature between the fluid and its surrounding, as well as 
+		  the situations where the concentration should be strictly confined to the fluid domain, such as the mixing of fluids with different surface tension 
+		  coefficients. The applicability of our method is demonstrated via examples of thermocapillary migration of bubbles, and spreading and mixing of drops 
+		  on a miscible liquid of different surface tension. I will also discuss future directions to model surfactants.</p>
       </div>	
 	  
       <div class="page-block">
         <h2>CCSE Seminar: Invited talk (Nov. 30, 2018)</h2>
-        <ul>
-	      <li>Prof. Christina Christara (University of Toronto): Spline collocation methods for a PDE with discontinuous diffusion coefficient</li>
-        </ul>
+	    <h3>Title: Spline collocation methods for a PDE with discontinuous diffusion coefficient</h3>
+		<p>Prof. Christina Christara, University of Toronto - Department of Computer Science</p>
+		<h3>Abstract: </h3>
+		<p>We consider spline collocation PDE discretization methods and their application to discontinuous diffusion parabolic PDEs. Spline collocation methods 
+		have been shown to be competitive PDE discretization techniques for BVPs and IVPs, under the assumption, among other, that the coefficients of the PDE are 
+		continuous functions. However, as with any PDE discretization method, when the method is applied to problems with discontinuous coefficients, convergence 
+		and/or the regular order of convergence exhibited on continuous problems are not necessarily obtained and special attention is required. We study spline 
+		collocation methods for solving a one-dimensional discontinuous diffusion parabolic PDE, where the discontinuity of the diffusion results in a particular 
+		form of discontinuity for the solution derivative. We formulate methods that handle the discontinuity, either by applying the discontinuity condition 
+		directly, or by modifying the spline basis functions appropriately, or by employing adaptive grids. We discuss the properties of the methods and present 
+		numerical results on various problems, including a parabolic PDE problem modelling brain cancer growth.</p>
       </div>
 	  
       <div class="page-block">
         <h2>CCSE Seminar: Invited talk (Feb. 21, 2019)</h2>
-        <ul>
-	      <li>Prof. Rodney O. Fox (Iowa State University): Multi-scale modeling of polydisperse multiphase flows using quadrature-based moment method</li>
-        </ul>
+	      <h3>Title: Multi-scale modeling of polydisperse multiphase flows using quadrature-based moment method</h3>
+		  <p>Prof. Rodney O. Fox, Iowa State University - Department of Chemical Engineering</p>
+          <h3>Abstract: </h3>
+		  <p>Quadrature-based moment methods (QBMM) are employed to solve kinetic and population balance equations and are especially useful for systems far from 
+		  equilibrium. Examples include highly compressible and disperse multiphase flows. Starting from the closed mesoscale model, the unclosed moment equations are 
+		  formulated and closed using QBMM. The order of the closure is controlled by the order of the moments used in QBMM. For example, dilute particle laden flows 
+		  can be described by a kinetic equation for the particle-phase velocity distribution function (VDF), and successfully closed with velocity moments up to 
+		  fourth order. The numerical algorithms used to solve moment equations must be consistent with the mesoscale model. For example, the numerical methods 
+		  employed to solve the spatial advection terms and the source terms must guarantee that the moments remain realizable (i.e., they must correspond to a VDF). 
+		  This can be accomplished with kinetic-based finite-volume methods. With QBMM, the VDF is represented by a finite set of weighted delta functions, similar to 
+		  the lattice-Boltzmann method, but with velocities that vary in space and time. Using applications from disperse multiphase flows, I will discuss how QBMM are 
+		  applied to solve mesoscale models using the OpenQBMM.org software.</p>
       </div>
 	  
 	  <div style="margin-bottom:100px;">
