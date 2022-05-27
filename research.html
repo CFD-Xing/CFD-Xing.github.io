@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jacques Y. Xing">
+    <title>CFD - Research</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+	  <nav>
+	    <div id="navbar">
+	      <div id="page-name">
+	        <a href="index.html">CFDXing</a>
+	      </div>
+          <div id="navbar-tab">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="publications.html">Publications</a></li>
+	          <li><a href="seminars.html">Seminars</a></li>
+              <li class="selected"><a href="research.html">Research</a></li>
+			  <li><a href="projects.html">Projects</a></li>
+		      <!--<li><a href="software.html">Software</a></li>-->
+              <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+          </div>
+	    </div>
+	    <div id="contact">
+          <ul>
+	        <li><a href="mailto:jacques.xing@mail.utoronto.ca.com" title="jacques.xing@mail.utoronto.ca"><img src="email.png" alt="Email"></a></li>
+          </ul>
+	    </div>
+	  </nav>
+	</header>
+	
+	<!-- MAIN -->
+	<main>
+      <div class="page-header">
+        <h1>Research</h1>
+      </div> 
+	  
+      <div class="page-block">
+        <h2>Improved Soot Modelling for Laminar and Turbulent Flames</h2>
+		<div class="info">
+		  Graduate Research Assistant<br>
+		  University of Toronto, Toronto<br>
+		  Sep 2016 – present
+		</div>
+        <ul>
+          <li>Developed and implemented quadrature-based moment closure approaches in an in-house 2D parallel multi-block finite-volume framework to improve soot particle modelling predictions in laminar and turbulent non-premixed flames</li>
+          <li>Implemented sectional methods for soot modelling to assess the accuracy of quadrature-based methods of moments in space-homogeneous (0D) problems</li>
+          <li>Implemented Reynolds/Favre-Averaged Navier-Stokes (RANS/FANS) equations in an in-house 2D parallel multi-block finite-volume framework for both explicit and implicit (NKS/GMRES) time-marching approaches</li>
+          <li>Conducted extensive verification and validation of the implementation of several versions (1998, 2006, and SST) of the k-omega turbulence model for a wide range of cases including cases from NASA’s Turbulence Modeling Resource (zero-pressure gradient flat plate and planar coflowing jet), non-reacting bluff body, and non-reacting jet</li>
+          <li>Implemented several chemistry tabulation techniques (FPI, SLFM, and FPV) in an in-house 2D parallel multi-block finite-volume framework for the modelling of turbulence non-premixed flames and performed extensive numerical simulations of a piloted and a lifted turbulent jet flames</li>
+          <li>Improved and expanded chemistry table generation to include non-adiabatic effects and soot chemistry as well as improving the automation of chemistry table generation and user experience</li>
+          <li>Performed a large number of numerical simulations of several laminar and turbulent flames as well as of non-reacting flows using an in-house 2D parallel multi-block finite-volume CFD framework on HPC clusters</li>
+          <li>Assisted and helped several master students in their research activities in matter related to turbulence modelling, chemistry tabulation, soot modelling, and the lab’s in-house CFD code</li>
+          <li>Identified problems related to CFD code development and numerical modelling and suggested solutions to several master students of the research group</li>
+          <li>Programmed with C++, MATLAB, Python, and Fortran; experience with distributed parallel programming (MPI) and version control (Git)</li>
+        </ul>
+	    <p style="text-align:center">
+        <a href="LaminarFlameTemperature.png" target="_blank"><img src="LaminarFlameTemperature.png" alt="Laminar Flame Temperature" style="width:38%"></a>
+        <a href="LaminarFlameSoot.png" target="_blank"><img src="LaminarFlameSoot.png" alt="Laminar Flame Soot" style="width:38%"></a>
+	    </p>
+      </div>
+	  		
+      <div class="page-block">
+        <h2>Non-Equilibrium Plasma Modelling</h2>
+		<div class="info">
+		  Graduate Research Assistant <br>
+		  Polytechnique Montréal, Montréal<br>
+		  May 2014 – Aug 2016
+		</div>
+        <ul>
+          <li>Performed non-equilibrium atmospheric pressure plasma modelling (electrohydrodynamic) for dielectric barrier discharge (DBD) plasma actuators applied to aerodynamic flow control</li>
+          <li>Implemented three species (ions, electrons, and neutrals) and four species (positive ions, negative ions, electrons, and neutrals) drift-diffusion plasma models based on the work of Bœuf et al. 2005 and Bœuf et al. 2008</li>
+          <li>Solved the drift-diffusion equation with the Scharfetter–Gummel exponential scheme and the Poisson equation with Gauss-Seidel and SOR methods</li>
+          <li>Produced aerodynamic flow simulations on a 2D airfoil with plasma actuation using the commercial software Fluent</li>
+          <li>Programmed with MATLAB and Microsoft Visual C++</li>
+        </ul>
+	    <p style="text-align:center">
+        <a href="plasma1.png" target="_blank"><img src="plasma1.png" alt="Plasma Actuator" style="width:35%"></a>
+        <a href="plasma2.png" target="_blank"><img src="plasma2.png" alt="Plasma Current" style="width:28%"></a>
+	    </p>
+      </div>
+
+      <div class="page-block">
+        <h2>B-Spline Geometric Parametrization for Aerodynamic Design</h2>
+		<div class="info">
+		  Undergraduate Research Assistant<br>
+		  Polytechnique Montréal, Montréal<br>
+		  May 2013 – Aug 2013
+		</div>
+        <ul>
+          <li>Formulated B-Spline geometric parametrization for aerodynamic design of turbofan blades using MATLAB</li>
+          <li>Produced flow simulations of turbofan blades with the commercial software CFX/TurboGrid</li>
+        </ul>
+      </div>
+
+	  <div style="margin-bottom:100px;">
+	  </div>
+	</main>
+	
+	
+	<!-- FOOTER -->
+	<footer>
+	  Copyright &copy; Jacques Xing 2022
+	</footer>
+  </body>
+</html>
